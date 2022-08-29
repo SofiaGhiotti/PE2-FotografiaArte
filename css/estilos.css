@@ -24,7 +24,6 @@
 
 .transparencia {
     background-color: rgba(255, 255, 255, 0.582);
-
 }
 
 .centro {
@@ -50,6 +49,7 @@ h1 {
 }
 
 .footer {
+    width: 100vw;
     background-color: blanchedalmond;
     display: flex;
     flex-direction: row;
@@ -132,6 +132,80 @@ h3 {
     align-items: center;
 }
 
+/* PAG CIUDADES */
+.contenidoCiudades {
+    display: flex;
+    height: 75vh;
+    background-image: linear-gradient(182deg, #fad7a1b5 19%, #f9b2b599 100%);
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ciudades {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.ciudades ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.fotos {
+    width: 100vw;
+}
+
+.fotos li a img {
+    width: 18rem;
+    height: 15rem;
+    border-radius: 25px;
+}
+
+.fotos a img:hover{
+    background-color: rgba(255, 255, 255, 0.582);
+}
+
+.titulos {
+    display: flex;
+    font-size: 4em;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* PAG NATURALEZA */
+.naturaleza{
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.naturaleza ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.naturaleza .fotos img {
+    width: 15em;
+    height: 13em;
+    border-radius: 25px;
+}
+
+
 
 @media (max-width: 991px) {
     .row {
@@ -176,3 +250,48 @@ h3 {
         flex-wrap: nowrap;
         justify-content: space-around;
     }
+
+    /* PAG CIUDADES */
+
+    .contenidoCiudades {
+        height: 110vh;
+    }
+
+    .ciudades {
+        height: 110vh;
+    }
+
+    .ciudades ul {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fotos {
+        height: 100vh;
+    }
+
+    .fotos li a img {
+        width: 15rem;
+        height: 12rem;
+        border-radius: 25px;
+    }
+
+    .titulos {
+        display: flex;
+        font-size: 3em;
+        text-align: center;
+        margin: 20px;
+    }
+
+    /* PAG NATURALEZA */
+    .naturaleza{
+        height: 100vh;
+        width: 100vw;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+
+
+}
