@@ -190,7 +190,7 @@ h3 {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .naturaleza ul {
     display: flex;
@@ -257,6 +257,9 @@ h3 {
         flex-direction: column;
         justify-content: space-around;
     }
+    .formulario {
+        width: 100vw;
+    }
 
     .contenido {
         height: 100vh;
@@ -268,7 +271,7 @@ h3 {
     /* PAG CIUDADES */
 
     .contenidoCiudades {
-        height: 110vh;
+        height: 100%;
     }
 
     .ciudades {
@@ -309,6 +312,25 @@ h3 {
     /* PAG SESIONES */
     .sesiones {
         height: 100vh;
+    }
+    
+}
+@media (max-width: 511px) {
+    .contenidoCiudades{
+        height: auto;
+    }
+    .naturaleza .fotos img {
+        width: 11em;
+        height: 8em;
+    }
+    .sesiones .fotos img {
+        width: 12em;
+        height: 10em;
+    }
+
+    .ciudades .fotos img {
+        width: 12em;
+        height: 10em;
     }
 
 
